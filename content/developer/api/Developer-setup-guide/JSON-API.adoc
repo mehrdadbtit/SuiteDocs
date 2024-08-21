@@ -20,6 +20,8 @@ SuiteCRM Api uses OAuth2 protocol, which needs public and private keys.
 
 First, open a terminal and go to `{{suitecrm.root}}/Api/V8/OAuth2`
 
+You may need to use `{{suitecrm.root}}/legacy/Api/V8/OAuth2` and keep using "/legacy/" prefix for all Api calls, somehow htaccess is not handling the rewrites correctly in v8.6
+
 Generate a private key:
 [source,php]
 openssl genrsa -out private.key 2048
